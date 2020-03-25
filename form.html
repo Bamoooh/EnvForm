@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container mb-5">
+        
+        <!-- INCINERATORS -->
+        <form id="noiseForm" class="needs-validation" name="noiseForm">
+                <h1>Noises</h1>
+                <div class="formBlock" id="noiseBlock">
+                    <div class="form-row" id="noiseBlock0">
+                        <h3>Noise 1</h3>
+                        <div class="col-md-12">
+                            <div class="col-md-10 mb-1">
+                                <label for="source" class="address-inp">Source</label>
+                                <input type="text" name="Source" class="form-control" value="Hi">
+                            </div>
+                            <div class="col-md-10 mb-1">
+                                <label for="noiseLevelInsidePremises" class="address-inp">Noise Level Inside Premises
+                                    (dBA)</label>
+                                <input type="number" name="noiseLevelInsidePremises" class="form-control" value=15>
+                            </div>
+                            <div class="col-md-10 mb-1">
+                                <label for="noiseLevelatBoundaryFence" class="address-inp">Noise Level at Boundary Fence
+                                    (dBA)</label>
+                                <input type="number" name="noiseLevelatBoundaryFence" class="form-control" value=15>
+                            </div>
+                            <div class="col-md-10 mb-1">
+                                <label for="controlMethods" class="address-inp">Control Methods</label>
+                                <input type="text" name="controlMethods" class="form-control" value="Hello">
+                            </div>
+                            <button type="button" class="btn btn-md btn-danger form-btn btn-delete" id="noiseBtn0">Delete Noise</button>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="addNoise" class="btn btn-primary btn-md form-btn">Add Noise</button>
+                <button type="button" id="submitNoise" class="btn btn-success btn-md form-btn">Submit</button>
+            </form>
+        <!-- INCINERATORS END -->
+
+        <!-- NOISES -->
+        <form id="noiseForm" class="needs-validation" name="noiseForm">
+            <h1>Noises</h1>
+            <div class="formBlock" id="noiseBlock">
+                <div class="form-row" id="noiseBlock0">
+                    <h3>Noise 1</h3>
+                    <div class="col-md-12">
+                        <div class="col-md-10 mb-1">
+                            <label for="source" class="address-inp">Source</label>
+                            <input type="text" name="Source" class="form-control" value="Hi">
+                        </div>
+                        <div class="col-md-10 mb-1">
+                            <label for="noiseLevelInsidePremises" class="address-inp">Noise Level Inside Premises
+                                (dBA)</label>
+                            <input type="number" name="noiseLevelInsidePremises" class="form-control" value=15>
+                        </div>
+                        <div class="col-md-10 mb-1">
+                            <label for="noiseLevelatBoundaryFence" class="address-inp">Noise Level at Boundary Fence
+                                (dBA)</label>
+                            <input type="number" name="noiseLevelatBoundaryFence" class="form-control" value=15>
+                        </div>
+                        <div class="col-md-10 mb-1">
+                            <label for="controlMethods" class="address-inp">Control Methods</label>
+                            <input type="text" name="controlMethods" class="form-control" value="Hello">
+                        </div>
+                        <input hidden type="" name="empty" id="">
+                        <button type="button" class="btn btn-md btn-danger form-btn btn-delete" id="noiseBtn0">Delete Noise</button>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="addNoise" class="btn btn-primary btn-md form-btn">Add Noise</button>
+            <button type="button" id="submitNoise" class="btn btn-success btn-md form-btn">Submit</button>
+        </form>
+        <!-- NOISES END -->
+
+        <!-- LOADING / UNLOADING -->
+        <!-- <form id="dredgingForm" class="needs-validation" name="dredgingForm">
+            <h1>Loading / Unloading Operations</h1>
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Is there loading/unloading of material containing “Volatile Organic Compounds” (VOCs) or “Hazardous Air Pollutants” (HAPs) at  the Facility? </label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q16">Yes</label>
+                            <input type="radio" name="q16" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q16">No</label>
+                            <input type="radio" name="q16" value="False">
+                        </div>
+                    </div>
+                    <label id="q16Label" class="address-inp" for="listThem" hidden>List Them:</label>
+                    <textarea id="q16Area" class="form-control" form="dredgingForm" name="listThem" rows="3" disabled
+                        hidden></textarea>
+                </div>
+            </div>
+        </form> -->
+        <!-- LOADING / UNLOADING END -->
+
+        <!-- DREDGING -->
+        <form id="dredgingForm" class="needs-validation" name="dredgingForm">
+            <h1>Dredging Operations</h1>
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Does the facility construction involve any “Dredging” operation ?</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q16">Yes</label>
+                            <input type="radio" name="q16" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q16">No</label>
+                            <input type="radio" name="q16" value="False">
+                        </div>
+                    </div>
+                    <label id="q16Label" class="address-inp" for="listThem" hidden>List Them:</label>
+                    <textarea id="q16Area" class="form-control" form="dredgingForm" name="listThem" rows="3" disabled
+                        hidden></textarea>
+                </div>
+            </div>
+        </form>
+        <!-- DREDGING END -->
+
+        <!-- OTHER FORM -->
+        <form id="otherForm" class="needs-validation" name="otherForm">
+            <h1>Other Information</h1>
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Vehicle maintenance on site</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17A">Yes</label>
+                            <input type="radio" name="q17A" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17A">No</label>
+                            <input type="radio" name="q17A" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Indoor abrasive blasting </label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17B">Yes</label>
+                            <input type="radio" name="q17B" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17B">No</label>
+                            <input type="radio" name="q17B" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Outdoor abrasive blasting</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17C">Yes</label>
+                            <input type="radio" name="q17C" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17C">No</label>
+                            <input type="radio" name="q17C" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Underground storage tanks</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17D">Yes</label>
+                            <input type="radio" name="q17D" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17D">No</label>
+                            <input type="radio" name="q17D" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Aboveground storage tanks</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17E">Yes</label>
+                            <input type="radio" name="q17E" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17E">No</label>
+                            <input type="radio" name="q17E" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Painting on site</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17F">Yes</label>
+                            <input type="radio" name="q17F" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17F">No</label>
+                            <input type="radio" name="q17F" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-5 mb-3">
+                    <label class="address-inp">Hazardous materials storage area</label>
+                    <div class="radio">
+                        <div class="radio-item">
+                            <label for="q17G">Yes</label>
+                            <input type="radio" name="q17G" value="True">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for="q17G">No</label>
+                            <input type="radio" name="q17G" value="False">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" type="button" id="noise">Next</button>
+
+            <div class="btns d-flex justify-content-between">
+                <button class="btn btn-secondary">Previous</button>
+                <button class="btn btn-primary">Next</button>
+            </div>
+        </form>
+        <!-- OTHER FORM END -->
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper-utils.min.js.map"></script>
+
+    <script src="EventHandlers.js"></script>
+    <script src="DbActions.js"></script>
+</body>
+
+</html>

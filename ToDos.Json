@@ -1,0 +1,12 @@
+{
+    "frontEnd": {
+        "Complete Forms":null,
+        "Add Delimeter Inpuuts":null,
+        "Make Sure on delete naming and ids are re-calculated": null
+    },
+
+    "DbActions":{
+        "Add Delimeter Check at loop":{},
+        "Add a way to get the proper name of the object insde var jsonData":{}
+    }
+}
